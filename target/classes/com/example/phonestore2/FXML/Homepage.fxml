@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchor" prefHeight="579.0" prefWidth="822.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.phonestore2.Homepage.Homepage">
+   <children>
+      <Pane prefHeight="580.0" prefWidth="200.0" style="-fx-background-color: #352875;">
+         <children>
+            <JFXButton fx:id="btn_update" layoutX="14.0" layoutY="411.0" onAction="#UpdateTable" prefHeight="36.0" prefWidth="173.0" style="-fx-border-color: #fff; -fx-border-radius: 5px;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Tai Le" size="17.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="model_box" editable="false" layoutX="14.0" layoutY="194.0" prefHeight="24.0" prefWidth="173.0" promptText="Model" />
+            <Label layoutX="14.0" layoutY="171.0" text="Phone Model" textFill="WHITE" />
+            <Label layoutX="14.0" layoutY="228.0" text="Condition" textFill="WHITE" />
+            <Label layoutX="14.0" layoutY="285.0" text="Accesories" textFill="WHITE" />
+            <TextField fx:id="accessories_box" editable="false" layoutX="14.0" layoutY="306.0" prefHeight="24.0" prefWidth="173.0" promptText="Accesories" />
+            <Label layoutX="14.0" layoutY="339.0" text="Price" textFill="WHITE" />
+            <TextField fx:id="price_box" editable="false" layoutX="14.0" layoutY="361.0" prefHeight="24.0" prefWidth="173.0" promptText="Price" />
+            <Separator layoutY="151.0" prefWidth="200.0" />
+            <TextField fx:id="id_box" editable="false" layoutX="14.0" layoutY="110.0" prefHeight="24.0" prefWidth="173.0" promptText="ID" />
+            <Label layoutX="14.0" layoutY="87.0" text="ID" textFill="WHITE" />
+            <TextField fx:id="condition_box" editable="false" layoutX="14.0" layoutY="252.0" prefHeight="24.0" prefWidth="173.0" promptText="Condition" />
+            <ImageView fitHeight="122.0" fitWidth="86.0" layoutX="58.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../logophonefarm.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="welcome" fill="WHITE" layoutX="14.0" layoutY="561.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome, ">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="toolbarRight" layoutX="200.0" prefHeight="58.0" prefWidth="622.0" style="-fx-background-color: #352875;">
+         <children>
+            <Label fx:id="dots_label" contentDisplay="TOP" layoutX="576.0" layoutY="4.0" />
+            <TextField fx:id="search_box" layoutX="14.0" layoutY="16.0" onAction="#search_phone" promptText="Search">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="signout_btn" layoutX="549.0" layoutY="17.0" onAction="#signOutAction" text="Sign Out" textFill="WHITE" />
+         </children>
+      </Pane>
+      <TableView fx:id="table_phones" editable="true" layoutX="200.0" layoutY="58.0" onMouseClicked="#getSelected" prefHeight="521.6" prefWidth="622.0" style="-fx-background-color: grey;">
+         <columns>
+            <TableColumn fx:id="col_id" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="col_model" prefWidth="130.0" text="Model" />
+            <TableColumn fx:id="col_condition" prefWidth="88.79998779296875" text="Condition" />
+            <TableColumn fx:id="col_access" prefWidth="230.40005493164062" text="Accessories" />
+            <TableColumn fx:id="col_price" prefWidth="104.79998779296875" text="Price" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #352875;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.phonestore2.LoginAdmin">
+   <children>
+      <TextField fx:id="username" layoutX="148.0" layoutY="129.0" prefHeight="26.0" prefWidth="304.0" promptText="Admin Username" style="-fx-background-color: #533ebd;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <PasswordField fx:id="password" layoutX="148.0" layoutY="180.0" prefHeight="26.0" prefWidth="304.0" promptText="Admin Password" style="-fx-background-color: #533ebd;">
+         <font>
+            <Font size="14.0" />
+         </font></PasswordField>
+      <ImageView fx:id="progress" fitHeight="80.0" fitWidth="160.0" layoutX="239.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../progress.gif" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="signInbtn" layoutX="266.0" layoutY="236.0" onAction="#loginAction" prefHeight="30.0" prefWidth="68.0" style="-fx-background-color: #533ebd;" text="Sign In" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="246.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../logophonefarm.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="signInbtn1" layoutX="513.0" layoutY="14.0" onAction="#backButton" prefHeight="30.0" prefWidth="68.0" style="-fx-background-color: #533ebd;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="PhoneStore2">
+    <output-path>$PROJECT_DIR$/out/artifacts/PhoneStore2</output-path>
+    <root id="root">
+      <element id="archive" name="PhoneStore2.jar">
+        <element id="module-output" name="PhoneStore" />
+      </element>
+    </root>
+  </artifact>
+</component>

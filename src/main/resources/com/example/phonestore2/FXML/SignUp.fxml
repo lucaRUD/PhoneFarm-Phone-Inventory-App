@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #352875;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.phonestore2.SignUp">
+<!--    I deleted the 17 after http://javafx.com/javafx/ because it outputed that it doesn't match the Java Fx runtime version-->
+    <children>
+        <TextField fx:id="FirstName" layoutX="148.0" layoutY="79.0" prefHeight="26.0" prefWidth="139.0" promptText="First Name" style="-fx-background-color: #533ebd;" />
+        <Button fx:id="signUpbtn" layoutX="178.0" layoutY="301.0" mnemonicParsing="false" onAction="#signUpAction" prefHeight="30.0" prefWidth="244.0" style="-fx-background-color: #533ebd;" text="Sign Up" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+      <TextField fx:id="LastName" layoutX="312.0" layoutY="79.0" prefHeight="26.0" prefWidth="139.0" promptText="Last Name" style="-fx-background-color: #533ebd;" />
+      <PasswordField fx:id="Password" layoutX="148.0" layoutY="187.0" prefHeight="26.0" prefWidth="304.0" promptText="Password" style="-fx-background-color: #533ebd;" />
+      <TextField fx:id="Username" layoutX="148.0" layoutY="133.0" prefHeight="26.0" prefWidth="304.0" promptText="Username" style="-fx-background-color: #533ebd;" />
+      <Button fx:id="signInbtn" layoutX="503.0" layoutY="24.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="30.0" prefWidth="71.0" style="-fx-background-color: #533ebd;" text="Sign In" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <JFXRadioButton fx:id="Malebtn" layoutX="218.0" layoutY="249.0" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="togglegroup1" />
+         </toggleGroup></JFXRadioButton>
+      <JFXRadioButton fx:id="Femalebtn" layoutX="315.0" layoutY="249.0" text="Female" toggleGroup="$togglegroup1" />
+    </children>
+</AnchorPane>
